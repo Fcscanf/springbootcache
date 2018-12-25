@@ -1,0 +1,24 @@
+spring:
+  redis:
+    host: 120.79.178.68
+  datasource:
+    url: jdbc:mysql:///springbootcache
+    username: root
+    password: 509165
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    cn:
+      fcsca:
+        springbootcache:
+          service: debug
+debug: true
+
+      
